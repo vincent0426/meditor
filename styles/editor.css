@@ -1,0 +1,96 @@
+.tiptap p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.ProseMirror h1.is-empty::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #ced4da;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.ProseMirror img.ProseMirror-selectednode {
+  outline: 3px solid #03a87c !important;
+}
+
+.ProseMirror hr {
+  border: 0 !important;
+  background: url("../public/hr.png") center center no-repeat !important;
+  background-size: 200px auto !important; /* Adjust the width as necessary */
+  height: 42px !important;
+  margin-top: 52px !important; /* Corrected property name */
+  margin-bottom: 42px !important; /* Corrected property name */
+}
+
+pre {
+  font-family: "JetBrainsMono", monospace;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+  font-size: 0.8rem;
+}
+
+pre .hljs-comment,
+pre .hljs-quote {
+  color: #5c6370; /* Lighter gray for comments */
+}
+
+pre .hljs-variable,
+pre .hljs-template-variable,
+pre .hljs-attribute,
+pre .hljs-tag,
+pre .hljs-name,
+pre .hljs-regexp,
+pre .hljs-link,
+pre .hljs-selector-id,
+pre .hljs-selector-class {
+  color: #e06c75; /* Softer red */
+}
+
+pre .hljs-number,
+pre .hljs-meta,
+pre .hljs-built_in,
+pre .hljs-builtin-name,
+pre .hljs-literal,
+pre .hljs-type,
+pre .hljs-params {
+  color: #d19a66; /* Soft orange */
+}
+
+pre .hljs-string,
+pre .hljs-symbol,
+pre .hljs-bullet {
+  color: #98c379; /* Softer green */
+}
+
+pre .hljs-title,
+pre .hljs-section {
+  color: #e5c07b; /* Soft yellow */
+}
+
+pre .hljs-keyword,
+pre .hljs-selector-tag {
+  color: #61afef; /* Soft blue */
+}
+
+pre .hljs-emphasis {
+  font-style: italic;
+}
+
+pre .hljs-strong {
+  font-weight: 700;
+}

@@ -1,0 +1,28 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:tailwindcss/recommended"],
+  "plugins": ["simple-import-sort", "unused-imports"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js"],
+      "parser": "@typescript-eslint/parser"
+    }
+  ],
+  "rules": {
+    "indent": ["error", 2],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "unused-imports/no-unused-imports": "error",
+    "no-unused-vars": "off",
+    "tailwindcss/no-custom-classname": "off",
+    "simple-import-sort/imports": "error",
+    "react/jsx-props-no-multi-spaces": "error",
+    "react/jsx-max-props-per-line": [
+      "error",
+      {
+        "maximum": 1,
+        "when": "multiline"
+      }
+    ]
+  }
+}
