@@ -100,6 +100,9 @@ const Meditor = () => {
       },
     },
     content: `
+      <h1>Welcome to Meditor</h1>
+      <p>Click on the plus button on a new line to see the floating menu</p>
+      <p>Select the content to see the bubble menu</p>
       `,
   });
   
